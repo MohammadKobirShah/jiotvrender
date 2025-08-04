@@ -36,7 +36,7 @@ app.use("/jiotv", async (req, res, next) => {
     secure: false,
     selfHandleResponse: true,
     headers: {
-      "User-Agent": "RANAPK",
+      "User-Agent": "Mozilla/5.0",
     },
     onProxyReq: (proxyReq, req, res) => {
       proxyReq.setHeader("X-Forwarded-For", req.ip);
